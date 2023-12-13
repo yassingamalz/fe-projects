@@ -1,0 +1,40 @@
+<div class="popup-container">
+  <div class="modal-header">
+    <h4 class="modal-title">Manage User Roles</h4>
+    <button type="button" class="close text-white" (click)="onClose()" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <label for="roles" class="font-weight-bold">Roles:</label>
+      <ul class="list-group roles-list">
+        <li *ngFor="let role of userRoles; let i = index" class="list-group-item d-flex justify-content-between align-items-center role-item">
+          {{ role.role.roleName }}
+          <div class="btn-group" role="group" aria-label="Role Actions">
+            <button type="button" class="btn btn-danger" (click)="removeRole(role.userRoleId)">
+              Remove
+            </button>
+            <button type="button" class="btn btn-primary" (click)="editRole(role.userRoleId)">
+              Edit
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="form-group">
+      <label for="newRole" class="font-weight-bold">Add New Role:</label>
+      <div class="input-group">
+        <select id="newRole" name="newRole" class="form-control" [(ngModel)]="newRoleName">
+          <option *ngFor="let role of roles" [value]="role.roleName">{{ role.roleName }}</option>
+        </select>
+        <div class="input-group-append">
+          <button type="button" class="btn btn-success" (click)="addNewRole()">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="onClose()">Cancel</button>
+  </div>
+</div>

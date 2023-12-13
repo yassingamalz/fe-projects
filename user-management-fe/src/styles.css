@@ -1,0 +1,157 @@
+:root {
+  --color-primary: #3A1078;
+  --color-primary-variant: #4E31AA;
+  --color-secondry: #2F58CD;
+  --color-danger: #dc3545;
+  --color-success: #1c7932;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info: #3795BD;
+  --color-info-light: #7d8da1;
+  --color-dark: #363949;
+  --color-light: Orgba(132, 139, 200, 0.18);
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.88rem;
+  background: var(--color-background);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--color-dark);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 0.87rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-size: 0.77rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+span {
+  color: var(--color-white);
+}
+
+
+.table-container {
+  margin-top: 20px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  text-align: center;
+}
+
+.table-container th {
+  background-color: var(--color-primary-variant);
+  color: #fff;
+}
+
+.table-container tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.form-container form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.table-container button {
+  border-radius: 200px;
+  margin-right: 10px;
+  padding: 8px 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.form-container button .modal-footer button {
+  padding: 8px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.form-container button:last-child {
+  margin-right: 0;
+}
+
+.popup-container {
+  transition: transform 0.2s ease-in-out;
+}

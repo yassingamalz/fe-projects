@@ -1,0 +1,45 @@
+.modal-header {
+    background-color: var(--color-primary-variant);
+    color: #fff;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .roles-list {
+    margin-bottom: 20px;
+  }
+  
+  .role-item {
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .role-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .modal-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 15px;
+  }
+  
+  
+  .btn-danger:hover,
+  .btn-primary:hover,
+  .btn-success:hover {
+    transform: scale(1.05);
+  }
+  
+  .close {
+    font-size: 1.5rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .close:hover {
+    opacity: 1;
+  }
+  

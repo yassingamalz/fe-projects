@@ -1,0 +1,36 @@
+.sidenav-container mat-sidenav{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    background-color: #2c3e50;
+    box-shadow: 0 6px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: fixed;
+}
+
+.sidenav-container mat-nav-list { 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.sidenav-container mat-list-item { 
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.sidenav-container mat-nav-list span,
+.sidenav-container mat-nav-list mat-icon {
+    color: white;
+}
+
+mat-sidenav:not(.mat-drawer-opened) {
+    transform: translate3d(0, 0, 0) !important;
+    visibility: visible !important;
+    width: 3% !important;
+  }
+  mat-sidenav:not(.mat-drawer-opened) span {
+  visibility: hidden;
+  float: inline-end;
+}

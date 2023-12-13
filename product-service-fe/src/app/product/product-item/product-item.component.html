@@ -1,0 +1,27 @@
+<div class="card product-card">
+  <div class="card-header product-header">
+    <h3>{{ product.name }}</h3>
+    <span class="category">{{ product.category.name }}</span>
+  </div>
+  
+  <img class="card-img-top product-image" src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/shopping_cart.png" alt="Product Image">
+  
+  <div class="card-body description">
+    <p>{{ product.description }}</p>
+  </div>
+  
+  <div class="card-footer product-details">
+    <div class="price">{{ product.price | currency:'USD':'symbol' }}</div>
+    <div class="stock">Stock: {{ product.inventoryStock }}</div>
+  </div>
+  
+  <div class="dates">
+    <div class="created-date">Created: {{ product.createdDate }}</div>
+    <div class="updated-date">Updated: {{ product.updatedDate }}</div>
+  </div>
+  
+  <div class="card-footer">
+    <button class="btn btn-primary" (click)="editProduct(product)">Edit</button>
+    <button class="btn btn-danger" (click)="deleteProduct(product)">Delete</button>
+  </div>
+</div>

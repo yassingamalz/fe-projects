@@ -1,0 +1,29 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav [(opened)]="isOpened" mode="side">
+      <mat-nav-list>
+        <button mat-mini-fab color="primary" (click)="toggleSidebar()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      <!-- Option 1 -->
+
+          <button mat-icon-button>
+            <mat-icon>home</mat-icon>
+          </button>
+          <span>Home</span>
+  
+          <button mat-icon-button>
+            <mat-icon>settings</mat-icon>
+          </button>
+          <span>settings</span>
+
+          <button mat-icon-button>
+            <mat-icon>account_circle</mat-icon>
+          </button>
+          <span>Profile</span>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-product-list></app-product-list>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

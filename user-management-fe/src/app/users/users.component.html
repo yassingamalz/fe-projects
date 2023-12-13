@@ -1,0 +1,45 @@
+<div class="table-container mt-3">
+  <h2>Users</h2>
+  <table class="table table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td scope="row">{{ user.userId }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>
+          <button class="btn btn-primary btn-sm" (click)="editUser(user)">Edit</button>
+          <button class="btn btn-danger btn-sm" (click)="deleteUser(user)">Delete</button>
+          <button class="btn btn-dark btn-sm" (click)="manageUserRoles(user)">Manage Roles</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- User Form -->
+<div class="form-container mt-3">
+  <h2>{{ editingUser ? 'Edit User' : 'Create User' }}</h2>
+  <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+    <div class="mb-3">
+      <label for="username" class="form-label">Username:</label>
+      <input type="text" id="username" name="username" class="form-control" [(ngModel)]="userFormModel.username"
+        required>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" id="email" name="email" class="form-control" [(ngModel)]="userFormModel.email" required>
+    </div>
+
+    <button type="submit" class="btn btn-success">{{ editingUser ? 'Update' : 'Create' }}</button>
+    <button type="button" class="btn btn-secondary" (click)="cancelEdit()">Cancel</button>
+  </form>
+</div>

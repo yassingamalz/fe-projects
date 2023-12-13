@@ -1,0 +1,17 @@
+  <div class="modal fade" id="errorDialog" tabindex="-1" role="dialog" #errorDialog>
+    <div *ngIf="errorMessage" class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title">Error</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="clearError()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {{ errorMessage }}
+      </div>
+    </div>
+  </div>
+</div>
+
+

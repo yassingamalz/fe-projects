@@ -1,0 +1,9 @@
+.page-content{
+    display: inline-block;
+    height: 100%;
+}
+/* .page-content::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */

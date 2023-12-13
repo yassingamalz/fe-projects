@@ -1,0 +1,60 @@
+.product-edit-modal {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-edit-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.product-edit-modal-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.product-edit-modal-body {
+  margin-bottom: 20px;
+}
+
+.product-edit-form-group {
+  margin-bottom: 15px;
+}
+
+.product-edit-label {
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.product-edit-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-edit-save-btn,
+.product-edit-close-btn {
+  background-color: #974EC3;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product-edit-save-btn:hover,
+.product-edit-close-btn:hover {
+  background-color: #7f3a93;
+}
+ 

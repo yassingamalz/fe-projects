@@ -1,0 +1,45 @@
+
+.navbar {
+    background-color: var(--color-primary);
+    padding: var(--padding-1) 0;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    max-width: 1200px;
+    margin: 0px 20px;
+    flex-direction: row;
+  }
+  
+  .logo i {
+    color: var(--color-white);
+    font-size: 24px;
+    margin: 0px 10px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: var(--padding-1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+  
+  .navbar-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Added background-color transition */
+    padding: 10px;
+    border-radius: 5px; /* Added border-radius for a rounded look */
+  }
+  
+  .navbar-links a:hover {
+    color: var( --color-primary);
+    background-color: var(--color-white); /* Added a semi-transparent background color on hover */
+  }
+  

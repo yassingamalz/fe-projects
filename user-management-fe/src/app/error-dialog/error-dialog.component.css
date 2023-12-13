@@ -1,0 +1,44 @@
+#errorDialog {
+  position: absolute; /* Position it absolute to take center alignment */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000; 
+}
+
+.show{
+    display: block !important; /* Make the dialog visible */
+}
+
+.modal-dialog {
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.modal-header {
+  background-color:var(--color-danger);
+  color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.modal-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.error-message {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}

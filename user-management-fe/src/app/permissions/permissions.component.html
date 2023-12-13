@@ -1,0 +1,36 @@
+<div class="table-container mt-3">
+  <h2>Permissions</h2>
+  <table class="table table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Permission Name</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let permission of permissions">
+        <td scope="row">{{ permission.permissionId }}</td>
+        <td>{{ permission.permissionName }}</td>
+        <td>
+          <button type="button" class="btn btn-primary" (click)="editPermission(permission)">Edit</button>
+          <button type="button" class="btn btn-danger" (click)="deletePermission(permission)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Permission Form -->
+<div class="form-container mt-3">
+  <h2>{{ editingPermission ? 'Edit Permission' : 'Create Permission' }}</h2>
+  <form (ngSubmit)="onSubmit()" #permissionForm="ngForm">
+    <div class="mb-3">
+      <label for="permissionName" class="form-label">Permission Name:</label>
+      <input type="text" id="permissionName" name="permissionName" class="form-control" [(ngModel)]="permissionFormModel.permissionName" required>
+    </div>
+
+    <button type="submit" class="btn btn-success">{{ editingPermission ? 'Update' : 'Create' }}</button>
+    <button type="button" class="btn btn-secondary" (click)="cancelEdit()">Cancel</button>
+  </form>
+</div>

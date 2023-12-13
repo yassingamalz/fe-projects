@@ -1,0 +1,18 @@
+<div class="toolbar">
+<mat-toolbar color="primary">
+  <span>Product Management</span>
+  <span class="spacer"></span>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>settings</mat-icon>
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="logout()">Logout</button>
+    <button mat-menu-item (click)="openSettings()">Settings</button>
+    <button mat-menu-item>Option 1</button>
+    <button mat-menu-item>Option 2</button>
+    <!-- Add other menu items as needed -->
+  </mat-menu>
+</mat-toolbar>
+</div>
