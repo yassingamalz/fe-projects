@@ -14,6 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { UserRoleComponent } from './user-role/user-role.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { RolePermissionsComponent } from './role-permissions/role-permissions.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { RolePermissionsComponent } from './role-permissions/role-permissions.co
     NavbarComponent,
     UserRoleComponent,
     RolePermissionsComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,  

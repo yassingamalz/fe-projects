@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "user-management-fe": {
+    "thndr": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/user-management-fe",
+            "outputPath": "dist/thndr",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,9 +25,8 @@
               "src/assets"
             ],
             "styles": [
-                "src/styles.css",
-                "node_modules/bootstrap/dist/css/bootstrap.min.css"
-              ],
+              "src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -61,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "user-management-fe:build:production"
+              "browserTarget": "thndr:build:production"
             },
             "development": {
-              "browserTarget": "user-management-fe:build:development"
+              "browserTarget": "thndr:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "user-management-fe:build"
+            "browserTarget": "thndr:build"
           }
         },
         "test": {
@@ -95,8 +94,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }
